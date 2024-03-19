@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://ceosxu2q70qgp"]
+
+[ext_resource type="Texture2D" uid="uid://1n15jp7vl1hm" path="res://UI/button_normal.png" id="1_g3yt5"]
+[ext_resource type="Texture2D" uid="uid://cblg4iey5we4x" path="res://UI/notification.png" id="1_gxrpr"]
+[ext_resource type="Texture2D" uid="uid://da5gq6cni4q77" path="res://UI/button_hover.png" id="2_6m8ap"]
+[ext_resource type="Script" path="res://Scripts/ButtonClose.gd" id="4_dauev"]
+[ext_resource type="FontFile" uid="uid://bpkch53ec4blw" path="res://Fonts/Kefario.otf" id="5_vb4ty"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tpq86"]
+texture = ExtResource("1_gxrpr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6tgmu"]
+texture = ExtResource("1_g3yt5")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_spyir"]
+texture = ExtResource("2_6m8ap")
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="LetterPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_tpq86")
+
+[node name="MarginContainer" type="MarginContainer" parent="LetterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 40.0
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_right = 60
+
+[node name="Label" type="Label" parent="LetterPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vb4ty")
+theme_override_font_sizes/font_size = 28
+text = "My dear Clara,
+A close friend of mine is in dire need of help. I must
+leave immediately.
+
+Check out the backpack by the decrepit cart. 
+Inside, you will find a key to upstairs. Make yourself at home.
+
+Your uncle, 
+Bert"
+
+[node name="Close" type="Button" parent="LetterPanel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -82.0
+offset_top = -63.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_6tgmu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_spyir")
+text = "Close"
+script = ExtResource("4_dauev")

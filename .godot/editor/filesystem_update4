@@ -1,4 +1,10 @@
 res://Scenes/level_1.tscn
 res://Materials/water_shader.gdshader
 res://Models/Bush/Texture_Leaves.material
-res://Materials/Water.tres
+res://Scenes/candles_1.tscn
+res://Scenes/sconce.tscn
+res://Scripts/light.gd
+res://Scripts/light_switch.gd
+res://Scenes/ui.tscn
+res://Scripts/ButtonClose.gd
+res://Scripts/LightSwitch.gd
