@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-config/name="ClaraCave"
+config/name="Clara's Cave"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Clara-s Cave"
 
 [rendering]
 

@@ -1,7 +1,7 @@
 shader_type spatial;
 
 // Change the values to another decimal to change the height and speed of the wave
-const float wave_height = 0.2;
+const float wave_height = 0.05;
 const float wave_speed = 0.4;
 
 uniform sampler2D wave_pattern;
