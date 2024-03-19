@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://6dgw0g80fcyp"]
+
+[ext_resource type="Shader" path="res://Materials/water_shader.gdshader" id="1_qc0c6"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_qc0c6")
+shader_parameter/color = Vector4(0.19, 0.71, 0.82, 0.44)
