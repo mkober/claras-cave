@@ -2,3 +2,5 @@ res://Scenes/Game.tscn
 res://Materials/water_shader.gdshader
 res://Models/Bush/Texture_Leaves.material
 res://Scripts/Game.gd
+res://Scenes/Player.tscn
+res://Scenes/CameraGimbal.tscn
