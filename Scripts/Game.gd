@@ -11,5 +11,4 @@ func _process(delta):
 	
 func _on_StaticBody_input_event(camera, event, click_position, click_normal, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
-		print(click_position)
 		$Player.target = click_position

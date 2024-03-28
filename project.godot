@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Clara-s Cave"
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [input]
 
 cam_zoom_in={

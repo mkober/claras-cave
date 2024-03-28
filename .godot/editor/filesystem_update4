@@ -1,15 +1,4 @@
 res://Scenes/Game.tscn
 res://Materials/water_shader.gdshader
 res://Models/Bush/Texture_Leaves.material
-res://Scenes/Player.tscn
-res://Scripts/Player.gd
-res://Scenes/Candles.tscn
-res://Scenes/Sconce.tscn
-res://Scenes/UI.tscn
-res://Scenes/DockStairsRamp.tscn
-res://Scripts/PlayerPointClick.gd
 res://Scripts/Game.gd
-res://Scripts/PlayerClickMove.gd
-res://Scripts/Camera.gd
-res://Scenes/CameraGimble.tscn
-res://Scenes/CameraGimbal.tscn
